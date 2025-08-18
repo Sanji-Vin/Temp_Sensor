@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:tempsensor/constants/constant.dart';
+import 'package:tempsensor/screens/main_screen.dart';
 
 void main() {
   runApp(const MainApp());
@@ -9,12 +11,14 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
+    return MaterialApp(
+      title: "Temperature Sensor",
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        scaffoldBackgroundColor: backgroundColor,
+        brightness: Brightness.dark,
       ),
+      home: const MainScreen(),
     );
   }
 }
