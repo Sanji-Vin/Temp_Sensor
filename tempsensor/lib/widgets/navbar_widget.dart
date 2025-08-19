@@ -43,14 +43,14 @@ class _SideMenuWidgetState extends State<SideMenuWidget> {
               padding: const EdgeInsets.symmetric(horizontal: 13, vertical: 7),
               child: Icon(
                 data.menu[index].icon,
-                color: isSelected ? Colors.black : Colors.grey,
+                color: isSelected ? Colors.black : Colors.white,
               ),
             ),
             Text(
               data.menu[index].title,
               style: TextStyle(
                 fontSize: 16,
-                color: isSelected ? Colors.black : Colors.grey,
+                color: isSelected ? Colors.black : Colors.white,
                 fontWeight: isSelected ? FontWeight.w600 : FontWeight.normal,
               ),
             ),

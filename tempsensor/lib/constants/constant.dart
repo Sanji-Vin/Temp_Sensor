@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-const cardBackgroundColor = Color(0x02304733);
-const primaryColor = Color(0xFF219EBC);
-const secondaryColor = Color(0xFF8ECAE6);
-const backgroundColor = Color(0xFFFFB703);
-const selectionColor = Color(0xFFFB8500);
+const cardBackgroundColor = Color(0xFF344E41);
+const primaryColor = Color(0xFF3A5A40);
+const secondaryColor = Color(0xFF588157);
+const backgroundColor = Color(0xFFA3B18A);
+const selectionColor = Color(0xFFDAD7CD);
 const defaultPadding = 20.0;
