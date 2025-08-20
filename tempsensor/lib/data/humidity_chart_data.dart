@@ -1,7 +1,7 @@
 import 'package:fl_chart/fl_chart.dart';
 
 class HumidityData {
-  final spots = const [
+  static List<FlSpot> spots = [
     FlSpot(0, 80),
     FlSpot(1, 82),
     FlSpot(2, 83),
@@ -28,7 +28,7 @@ class HumidityData {
     FlSpot(23, 78),
     FlSpot(24, 80),
   ];
-    final bottomTitle = {
+     static Map<int, String> bottomTitle = {
     0: '00h',
     3: '03h',
     6: '06h',

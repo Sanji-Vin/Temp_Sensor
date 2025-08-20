@@ -1,7 +1,7 @@
 import 'package:fl_chart/fl_chart.dart';
 
 class AirQualityData {
-  final spots = const [
+  static List<FlSpot> spots = [
     FlSpot(0, 50), // Good
     FlSpot(1, 48),
     FlSpot(2, 45),
@@ -28,7 +28,7 @@ class AirQualityData {
     FlSpot(23, 52),
     FlSpot(24, 50),
   ];
-  final bottomTitle = {
+   static Map<int, String> bottomTitle = {
     0: '00h',
     3: '03h',
     6: '06h',

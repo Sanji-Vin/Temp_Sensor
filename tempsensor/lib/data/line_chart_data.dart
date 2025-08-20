@@ -1,7 +1,7 @@
 import 'package:fl_chart/fl_chart.dart';
 
 class LineData {
-  final spots = const [
+  static List<FlSpot> spots = [
     FlSpot(0, 18), // midnight
     FlSpot(1, 17.5),
     FlSpot(2, 17),
@@ -40,7 +40,7 @@ class LineData {
   };
 
   // Time axis (X)
-  final bottomTitle = {
+  static Map<int, String> bottomTitle = {
     0: '00h',
     3: '03h',
     6: '06h',
