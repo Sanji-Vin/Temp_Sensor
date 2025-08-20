@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tempsensor/widgets/dashboard_widget.dart';
 import 'package:tempsensor/widgets/navbar_widget.dart';
+import 'package:tempsensor/widgets/summary_widget.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});
@@ -24,7 +25,20 @@ class MainScreen extends StatelessWidget {
             ),
 
             // Right panel
-            Expanded(flex: 3, child: Container(color: Colors.green)),
+            Expanded(
+              flex: 3,
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: const [
+                    DateTimeCard(), // exact date & time
+                    SizedBox(height: 20),
+                    DeviceStatusCard(), // device status
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),

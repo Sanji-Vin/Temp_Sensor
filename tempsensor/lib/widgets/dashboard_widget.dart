@@ -5,12 +5,17 @@ import 'package:tempsensor/data/line_chart_data.dart';
 import 'package:tempsensor/data/humidity_chart_data.dart';
 import 'package:tempsensor/data/air_quality_chart_data.dart';
 import 'package:tempsensor/data/light_intensity_chart_data.dart';
+import 'package:tempsensor/widgets/bar_graph_card.dart';
 
 class DashboardWidget extends StatelessWidget {
   const DashboardWidget({super.key});
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return SingleChildScrollView(
+    child: 
+    Padding(padding: const EdgeInsets.symmetric(horizontal: 18), 
+    child: 
+    Column(
       children: [
         SizedBox(height: 18),
         ActivityDetailsCard(),
@@ -58,7 +63,9 @@ class DashboardWidget extends StatelessWidget {
           minY: 0,
           maxY: 100, // adjust depending on sensor range
         ),
+        SizedBox(height: 20),
+        BarGraphCard(),
       ],
-    );
+    ),),);
   }
 }

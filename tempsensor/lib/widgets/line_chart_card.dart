@@ -1,6 +1,5 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
-import 'package:tempsensor/constants/constant.dart';
 import 'package:tempsensor/widgets/custom_card_widget.dart';
 
 class LineChartCard extends StatelessWidget {
