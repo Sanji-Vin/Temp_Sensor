@@ -18,7 +18,8 @@ class MainApp extends StatelessWidget {
         scaffoldBackgroundColor: backgroundColor,
         brightness: Brightness.dark,
       ),
-      home: const MainScreen(),
+      // Make MainScreen scrollable-friendly
+      home: const SafeArea(child: MainScreen()),
     );
   }
 }
