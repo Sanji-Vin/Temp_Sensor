@@ -19,7 +19,10 @@ It integrates multiple sensors on a custom PCB designed with **KiCad** and provi
   - ESP32-S3 Mini  
   - I²C communication protocol  
   - KiCad for PCB design  
-  - Integrated environmental sensors  
+  - Integrated environmental sensors: -BME280 (temperature, Humidity sensor)
+                                      -VEML7700(Light intensity sensor)
+                                      -SGP40(air quality sensor)
+      
 
 - **Software**:  
   - Flutter for cross-platform app development  
